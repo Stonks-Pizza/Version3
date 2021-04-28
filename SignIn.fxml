@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <children>
+        <Separator layoutX="7.0" layoutY="120.0" prefHeight="3.0" prefWidth="1000.0">
+            <opaqueInsets>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </opaqueInsets>
+            <effect>
+                <Shadow radius="4.75" width="0.0">
+                    <input>
+                        <SepiaTone />
+                    </input>
+                </Shadow>
+            </effect>
+        </Separator>
+        <ImageView fitHeight="82.0" fitWidth="126.0" layoutX="12.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@StonksLogo.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="HomeBtn" layoutX="17.0" layoutY="85.0" mnemonicParsing="false" onAction="#handleHomeBtn" prefHeight="25.0" prefWidth="84.0" text="HOME" />
+        <Button layoutX="18.0" layoutY="734.0" mnemonicParsing="false" text="BACK" />
+        <ImageView fitHeight="62.0" fitWidth="54.0" layoutX="17.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Backarrow.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="SignInBtn" layoutX="480.0" layoutY="432.0" mnemonicParsing="false" onAction="#handleSignInBtn" text="Sign In">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Button>
+        <Button layoutX="563.0" layoutY="475.0" mnemonicParsing="false" text="Forgot Password" />
+        <Button fx:id="CreateAccountBtn" layoutX="352.0" layoutY="476.0" mnemonicParsing="false" onAction="#handleCreateAccountBtn" text="Create Account" />
+        <PasswordField layoutX="438.0" layoutY="376.0" />
+        <Label layoutX="316.0" layoutY="378.0" text="Password: ">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="311.0" layoutY="328.0" text="Username: ">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField layoutX="436.0" layoutY="327.0" />
+        <Label layoutX="453.0" layoutY="213.0" text="Sign In">
+            <font>
+                <Font name="System Bold" size="45.0" />
+            </font>
+        </Label>
+        <Label layoutX="448.0" layoutY="584.0" text="Kennesaw, GA">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="442.0" layoutY="622.0" text="(706) 337-0190">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

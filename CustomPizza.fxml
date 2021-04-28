@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <children>
+        <Separator layoutX="7.0" layoutY="120.0" prefHeight="3.0" prefWidth="1000.0">
+            <opaqueInsets>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </opaqueInsets>
+            <effect>
+                <Shadow radius="4.75" width="0.0">
+                    <input>
+                        <SepiaTone />
+                    </input>
+                </Shadow>
+            </effect>
+        </Separator>
+        <ImageView fitHeight="82.0" fitWidth="126.0" layoutX="12.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@StonksLogo.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="HomeBtn" layoutX="17.0" layoutY="85.0" mnemonicParsing="false" onAction="#handleHomeBtn" prefHeight="25.0" prefWidth="84.0" text="HOME" />
+        <Button fx:id="GoToCartBtn" layoutX="801.0" layoutY="85.0" mnemonicParsing="false" onAction="#handleGoToCartBtn" text="Go To Cart" />
+        <Button layoutX="18.0" layoutY="734.0" mnemonicParsing="false" text="BACK" />
+        <ImageView fitHeight="62.0" fitWidth="54.0" layoutX="17.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Backarrow.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="68.0" fitWidth="136.0" layoutX="896.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@ProfileIcon.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="ProfileBtn" layoutX="904.0" layoutY="85.0" mnemonicParsing="false" onAction="#handleProfileBtn" text="Profile" />
+        <ImageView fitHeight="68.0" fitWidth="84.0" layoutX="804.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Cart.jpg" />
+            </image>
+        </ImageView>
+      <Label layoutX="350.0" layoutY="150.0" text="Build Your Own" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="150.0" layoutY="300.0" text="Meats" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="650.0" layoutY="300.0" text="Veggies" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="150.0" layoutY="500.0" text="Size" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="650.0" layoutY="500.0" text="Crust" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="800.0" layoutY="700.0" mnemonicParsing="false" text="Add To Order" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="850.0" layoutY="150.0" text="Total" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="850.0" layoutY="190.0" text="\$0.00">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <CheckBox layoutX="150.0" layoutY="340.0" mnemonicParsing="false" text="Pepperoni     +$0.50">
+         <font>
+            <Font size="14.0" />
+         </font></CheckBox>
+      <CheckBox layoutX="150.0" layoutY="360.0" mnemonicParsing="false" text="Sausage     +$0.50">
+         <font>
+            <Font size="14.0" />
+         </font></CheckBox>
+      <CheckBox layoutX="150.0" layoutY="380.0" mnemonicParsing="false" text="Bacon     +$0.50">
+         <font>
+            <Font size="14.0" />
+         </font></CheckBox>
+      <CheckBox layoutX="150.0" layoutY="400.0" mnemonicParsing="false" text="Ham     +$0.50">
+         <font>
+            <Font size="14.0" />
+         </font></CheckBox>
+      <CheckBox layoutX="650.0" layoutY="340.0" mnemonicParsing="false" text="Mushroom     +$0.50">
+         <font>
+            <Font size="14.0" />
+         </font></CheckBox>
+      <CheckBox layoutX="650.0" layoutY="360.0" mnemonicParsing="false" text="Spinach     +$0.50">
+         <font>
+            <Font size="14.0" />
+         </font></CheckBox>
+      <CheckBox layoutX="650.0" layoutY="380.0" mnemonicParsing="false" text="Pineapple     +$0.50">
+         <font>
+            <Font size="14.0" />
+         </font></CheckBox>
+      <CheckBox layoutX="650.0" layoutY="400.0" mnemonicParsing="false" text="Onion     +$0.50">
+         <font>
+            <Font size="14.0" />
+         </font></CheckBox>
+      <VBox layoutX="150.0" layoutY="530.0" prefHeight="200.0" prefWidth="161.0">
+         <children>
+            <RadioButton mnemonicParsing="false" text="Small     $5.00">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Size" />
+               </toggleGroup>
+               <font>
+                  <Font size="14.0" />
+               </font></RadioButton>
+            <RadioButton mnemonicParsing="false" text="Medium     $7.00" toggleGroup="$Size">
+               <font>
+                  <Font size="14.0" />
+               </font></RadioButton>
+            <RadioButton mnemonicParsing="false" text="Large     $10.00" toggleGroup="$Size">
+               <font>
+                  <Font size="14.0" />
+               </font></RadioButton>
+            <RadioButton mnemonicParsing="false" prefHeight="20.0" prefWidth="161.0" text="Extra-Large     $12.00" toggleGroup="$Size">
+               <font>
+                  <Font size="14.0" />
+               </font></RadioButton>
+         </children>
+      </VBox>
+      <VBox layoutX="650.0" layoutY="530.0" prefHeight="200.0" prefWidth="111.0">
+         <children>
+            <RadioButton mnemonicParsing="false" text="Thin">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Crust" />
+               </toggleGroup>
+               <font>
+                  <Font size="14.0" />
+               </font></RadioButton>
+            <RadioButton mnemonicParsing="false" prefHeight="20.0" prefWidth="127.0" text="Hand-Tossed" toggleGroup="$Crust">
+               <font>
+                  <Font size="14.0" />
+               </font></RadioButton>
+         </children>
+      </VBox>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="400.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cheesepizza.jpg" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <children>
+        <Separator layoutX="7.0" layoutY="120.0" prefHeight="3.0" prefWidth="1000.0">
+            <opaqueInsets>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </opaqueInsets>
+            <effect>
+                <Shadow radius="4.75" width="0.0">
+                    <input>
+                        <SepiaTone />
+                    </input>
+                </Shadow>
+            </effect>
+        </Separator>
+        <ImageView fitHeight="82.0" fitWidth="126.0" layoutX="12.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@StonksLogo.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="HomeBtn" layoutX="17.0" layoutY="85.0" mnemonicParsing="false" onAction="#handleHomeBtn" prefHeight="25.0" prefWidth="84.0" text="HOME" />
+        <Button layoutX="18.0" layoutY="734.0" mnemonicParsing="false" text="BACK" />
+        <ImageView fitHeight="62.0" fitWidth="54.0" layoutX="17.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Backarrow.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="68.0" fitWidth="136.0" layoutX="896.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@ProfileIcon.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="ProfileBtn" layoutX="904.0" layoutY="85.0" mnemonicParsing="false" onAction="#handleProfileBtn" text="Profile" />
+        <Button fx:id="CheckOutBtn" layoutX="434.0" layoutY="601.0" mnemonicParsing="false" onAction="#handleCheckOutBtn" text="Check-Out">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Button>
+        <Text layoutX="441.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CART" textAlignment="CENTER" wrappingWidth="132.634765625">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Text>
+        <Text layoutX="315.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Items">
+         <font>
+            <Font size="24.0" />
+         </font></Text>
+        <Text layoutX="628.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price">
+         <font>
+            <Font size="24.0" />
+         </font></Text>
+        <Line endX="-100.0" endY="243.0" layoutX="607.0" layoutY="196.0" startX="-100.0" />
+        <Text layoutX="613.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tax">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+        <Text layoutX="614.0" layoutY="534.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <TextField fx:id="cartItems" layoutX="262.0" layoutY="278.0" promptText="Items" />
+      <TextField layoutX="586.0" layoutY="278.0" promptText="Price" />
+      <TextField layoutX="660.0" layoutY="480.0" text="\$0.00" />
+      <TextField layoutX="660.0" layoutY="514.0" text="\$0.00" />
+    </children>
+</AnchorPane>
